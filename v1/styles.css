@@ -208,6 +208,10 @@ ul {
   display: none;
 }
 
+.btn-link__submenu.opened {
+  display: block;
+}
+
 .link {
   color: var(--link-color);
   text-decoration: none;
