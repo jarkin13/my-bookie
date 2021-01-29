@@ -15,100 +15,110 @@
   <body>
     <header class="site-header site-section">
       <nav class="nav nav-main">
-        <div class="row">
-          <div class="col col-2 nav-main__logo">
-            <a href="index.html">
-              <img src="images/mybookie-logo.png" alt="My Bookie Logo" />
-            </a>
-          </div>
-          <div class="col col-7 nav-main__navigation">
-            <ul class="row">
-              <li class="col col-auto">
-                <a href="#" class="link nav-main__link">Sportsbook</a>
-              </li>
-              <li class="col col-auto">
-                <a href="#" class="link nav-main__link">Live Betting</a>
-              </li>
-              <li class="col col-auto">
-                <a href="#" class="link nav-main__link">Casino</a>
-              </li>
-              <li class="col col-auto">
-                <a href="#" class="link nav-main__link">Racing</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col col-3 nav-main__actions text-right">
-            <button class="btn btn-link">Login</button>
-            <button class="btn btn--orange">Join Now</button>
+        <div class="container">
+          <div class="row">
+            <div class="col col-2 nav-main__logo">
+              <a href="index.html">
+                <img src="images/mybookie-logo.png" alt="My Bookie Logo" />
+              </a>
+            </div>
+            <div class="col col-7 nav-main__navigation">
+              <div class="container">
+                <ul class="row">
+                  <li class="col col-auto">
+                    <a href="#" class="link nav-main__link">Sportsbook</a>
+                  </li>
+                  <li class="col col-auto">
+                    <a href="#" class="link nav-main__link">Live Betting</a>
+                  </li>
+                  <li class="col col-auto">
+                    <a href="#" class="link nav-main__link">Casino</a>
+                  </li>
+                  <li class="col col-auto">
+                    <a href="#" class="link nav-main__link">Racing</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col col-3 nav-main__actions text-right">
+              <button class="btn btn-link">Login</button>
+              <button class="btn btn--orange">Join Now</button>
+            </div>
           </div>
         </div>
       </nav>
       <div class="nav nav-secondary-container">
-        <div class="row">
-          <div class="nav-secondary__search col col-2">
-            <input
-              type="search"
-              placeholder="Search MyBookie..."
-              class="search__input"
-            />
-          </div>
-          <div class="col col-6 nav-secondary__promos">
-            <nav class="nav-secondary">
-              <ul class="row">
-                <li class="col col-auto">
-                  <a href="#" class="nav-secondary__link link">Cashier</a>
-                </li>
-                <li class="col col-auto">
-                  <a href="#" class="nav-secondary__link link"
-                    >Refer Your Friends</a
-                  >
-                </li>
-                <li class="col col-auto">
-                  <a href="#" class="nav-secondary__link link">Bonuses</a>
-                </li>
-                <li class="col col-auto">
-                  <a href="#" class="nav-secondary__link link">Contests</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="nav-secondary-actions col col-4">
-            <ul class="row">
-              <li class="col col-auto">
-                <button
-                  class="btn btn-link btn-link--has-submenu"
-                  data-open="odds"
-                >
-                  <span>Odds Form</span>
-                  American(+120)
-                  <span class="arrow-down"></span>
-                </button>
-                <ul id="odds" class="btn-link__submenu">
-                  <li>American(+120)</li>
-                  <li>Fractional(6/5)</li>
-                  <li>Decimal(2.20)</li>
+        <div class="container">
+          <div class="row">
+            <div class="nav-secondary__search col col-2">
+              <input
+                type="search"
+                placeholder="Search MyBookie..."
+                class="search__input"
+              />
+            </div>
+            <div class="col col-6 nav-secondary__promos">
+              <nav class="nav-secondary">
+                <div class="container">
+                  <ul class="row">
+                    <li class="col col-auto">
+                      <a href="#" class="nav-secondary__link link">Cashier</a>
+                    </li>
+                    <li class="col col-auto">
+                      <a href="#" class="nav-secondary__link link"
+                        >Refer Your Friends</a
+                      >
+                    </li>
+                    <li class="col col-auto">
+                      <a href="#" class="nav-secondary__link link">Bonuses</a>
+                    </li>
+                    <li class="col col-auto">
+                      <a href="#" class="nav-secondary__link link">Contests</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="nav-secondary-actions col col-4">
+              <div class="container">
+                <ul class="row">
+                  <li class="col col-auto">
+                    <button
+                      class="btn btn-link btn-link--has-submenu"
+                      data-open="odds"
+                    >
+                      <span>Odds Form</span>
+                      American(+120)
+                      <span class="arrow-down"></span>
+                    </button>
+                    <ul id="odds" class="btn-link__submenu">
+                      <li>American(+120)</li>
+                      <li>Fractional(6/5)</li>
+                      <li>Decimal(2.20)</li>
+                    </ul>
+                  </li>
+                  <li class="col col-auto">
+                    <button
+                      class="btn btn-link btn-link--has-submenu"
+                      data-open="timeZone"
+                    >
+                      <span>Time Zone</span>
+                      GMT -5(EST)
+                      <span class="arrow-down"></span>
+                    </button>
+                    <ul id="timeZone" class="btn-link__submenu">
+                      <li>Eastern Time</li>
+                      <li>Central Time</li>
+                      <li>Mountain Time</li>
+                      <li>Pacific Time</li>
+                    </ul>
+                  </li>
+                  <li class="col col-auto border-x">
+                    <a href="#" class="nav-secondary__link link">Help Center</a>
+                  </li>
                 </ul>
-              </li>
-              <li class="col col-auto">
-                <button
-                  class="btn btn-link btn-link--has-submenu"
-                  data-open="timeZone"
-                >
-                  <span>Time Zone</span>
-                  GMT -5(EST)
-                  <span class="arrow-down"></span>
-                </button>
-                <ul id="timeZone" class="btn-link__submenu">
-                  <li>Eastern Time</li>
-                  <li>Central Time</li>
-                  <li>Mountain Time</li>
-                  <li>Pacific Time</li>
-                </ul>
-              </li>
-              <li class="col col-auto border-x">
-                <a href="#" class="nav-secondary__link link">Help Center</a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
