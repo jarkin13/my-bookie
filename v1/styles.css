@@ -1,0 +1,225 @@
+.mybookie-root {
+  /* colors */
+  --orange: #ff8300;
+  --white: #ffffff;
+  --blue: #1976d2;
+
+  /* grey */
+  --grey100: #58595a;
+  --grey200: #242526;
+  --grey300: #17191a;
+
+  /* font weights */
+  --font-weight-normal: 400;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  /* main styles */
+  --main-font-family: Montserrat, sans-serif;
+  --main-font-weight: var(--font-weight-semi-bold);
+  --main-bg-color: var(--grey300);
+  --main-text-color: var(--white);
+
+  /* buttons */
+  --lt-grey-btn: rgba(238, 238, 238, 0.15);
+  --btn-background: var(--orange);
+  --btn-font-weight: var(--font-weight-semi-bold);
+  --btn-text-color: var(--white);
+  --btn-text-size: 12px;
+
+  /* links */
+  --link-color: var(--white);
+  --link-hover-color: var(--orange);
+
+  /* flex */
+  --flex-gutter: 1rem;
+  --flex-padding: calc(var(--flex-gutter) / 2);
+  --flex-row-margin: calc(var(--flex-gutter) / 2);
+  --flex-width: 100%;
+
+  /* nav */
+  --navPaddingY: 10px;
+}
+
+/* generic */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: var(--main-font-family);
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+/* flex */
+.row {
+  display: flex;
+  margin-left: calc(var(--flex-row-margin) * -1);
+  margin-right: calc(var(--flex-row-margin) * -1);
+  padding-left: var(--flex-padding);
+  padding-right: var(--flex-padding);
+}
+
+.row--align-center {
+  align-items: center;
+}
+
+.col {
+  flex: 0 0 var(--flex-width);
+  padding-left: var(--flex-padding);
+  padding-right: var(--flex-padding);
+  max-width: var(--flex-width);
+  width: 100%;
+}
+
+.col.col-auto {
+  --flex-width: auto;
+  width: auto;
+}
+
+.col.col-2 {
+  --flex-width: 16.66667%;
+}
+
+.col.col-3 {
+  --flex-width: 25%;
+}
+
+.col.col-4 {
+  --flex-width: 33.33333%;
+}
+
+.col.col-5 {
+  --flex-width: 41.666667%;
+}
+
+.col.col-6 {
+  --flex-width: 50%;
+}
+
+.col.col-7 {
+  --flex-width: 58.33333%;
+}
+
+/* text styles */
+.text-right {
+  text-align: right;
+}
+
+/* buttons & links */
+.btn {
+  background-color: var(--btn-background);
+  border: none;
+  color: var(--btn-text-color);
+  cursor: pointer;
+  font-family: var(--main-font-family);
+  font-size: var(--btn-text-size);
+  font-weight: var(--btn-font-weight);
+  outline: none;
+}
+
+.btn-link {
+  --btn-text-size: 12px;
+  --btn-background: transparent;
+}
+
+.btn--orange {
+  border-radius: 8px;
+  padding: 7px 29px;
+  text-transform: uppercase;
+}
+
+.link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+  color: var(--link-hover-color);
+  /* TODO: research why transition is causing bug */
+  transition: color 0.2s;
+}
+
+/* header */
+.site-header {
+  background-color: var(--grey200);
+}
+
+/* nav */
+.nav-main {
+  border-bottom: 2px solid var(--lt-grey-btn);
+}
+
+.nav-main__navigation {
+  align-self: stretch;
+}
+
+.nav-main__logo {
+  padding: var(--navPaddingY) 0;
+}
+
+.nav-main__logo img {
+  max-width: 100%;
+}
+
+.nav-main__navigation ul {
+  font-size: 15.42px;
+  height: 100%;
+}
+
+.nav-main__navigation ul li {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.nav-main__link::after {
+  content: "";
+}
+
+.nav-main__link:hover::after {
+  border-bottom: 8px solid var(--grey100);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  bottom: 0;
+  height: 0;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 0;
+}
+
+.nav-secondary-container {
+  padding-bottom: var(--navPaddingY);
+  padding-top: var(--navPaddingY);
+}
+
+/* main */
+.site-section,
+.content {
+  font-weight: var(--main-font-weight);
+}
+
+.site-main {
+  --main-font-weight: var(--font-weight-normal);
+}
+
+/* nav actions */
+.nav-main__actions {
+  align-self: center;
+}
