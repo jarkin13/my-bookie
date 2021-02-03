@@ -319,3 +319,21 @@ ul {
 .nav-main__actions {
   align-self: center;
 }
+
+/* content */
+
+.content__main-button {
+  background-color: var(--grey100);
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+.content__main-items {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.content__main-item + .content__main-item {
+  color: var(--orange);
+}
