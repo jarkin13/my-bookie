@@ -250,10 +250,6 @@ ul {
 /* nav */
 .nav {
   font-size: 1rem;
-<<<<<<< HEAD
-=======
-  /* padding: var(--navPaddingY) 0; */
->>>>>>> fd91ee46e74a8c0b0cb82f8b8eb1e703f1ac8bb5
 }
 
 .nav-main {
@@ -282,10 +278,7 @@ ul {
   display: flex;
   margin-right: 15px;
   position: relative;
-<<<<<<< HEAD
-=======
   margin-right: 15px;
->>>>>>> fd91ee46e74a8c0b0cb82f8b8eb1e703f1ac8bb5
   height: 100%;
 }
 
