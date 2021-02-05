@@ -1,6 +1,7 @@
 // es6 => is same as function()
 
 (() => {
+  const nav = document.querySelector(".nav-secondary-actions");
   const btnSubMenuLink = document.querySelectorAll(".btn-link--has-submenu");
   for (let i = 0; i < btnSubMenuLink.length; i++) {
     const btn = btnSubMenuLink[i];
@@ -9,8 +10,17 @@
 
     btn.onclick = () => {
       let isOpened = "true";
+      const currentSubMenuOpened = nav.querySelector(".opened");
 
-      if (btn.getAttribute("date-is-open") === "true") {
+      if (currentSubMenuOpened && currentSubMenuOpened !== subMenu) {
+        const openId = currentSubMenuOpened.getAttribute("id");
+        currentSubMenuOpened.classList.remove("opened");
+        nav
+          .querySelector(`[data-open=${openId}]`)
+          .setAttribute("data-is-open", "false");
+      }
+
+      if (btn.getAttribute("data-is-open") === "true") {
         isOpened = "false";
         subMenu.classList.remove("opened");
       } else {
@@ -18,6 +28,20 @@
       }
 
       btn.setAttribute("data-is-open", isOpened);
+    };
+  }
+
+  const bets = document.querySelector(".bet-container");
+  const userBets = [];
+
+  for (let i = 0; i < bets.length; i++) {
+    const bet = bets[i];
+    bet.onclick = () => {
+      const title = bet.querySelector(".title").innerText;
+      const odd = bet.querySelector(".odds").innerText;
+
+      console.log(title);
+      console.log(odd);
     };
   }
 })();
