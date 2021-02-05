@@ -31,7 +31,7 @@
     };
   }
 
-  const bets = document.querySelector(".bet-container");
+  const bets = document.querySelectorAll(".bet-container");
   const userBets = [];
 
   for (let i = 0; i < bets.length; i++) {
@@ -40,8 +40,12 @@
       const title = bet.querySelector(".title").innerText;
       const odd = bet.querySelector(".odds").innerText;
 
-      console.log(title);
-      console.log(odd);
+      const betData = {
+        title,
+        odd,
+        id: i,
+      };
+      console.log(betData);
     };
   }
 })();
