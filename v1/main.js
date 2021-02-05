@@ -38,8 +38,12 @@
       const title = bet.querySelector(".title").innerText;
       const odd = bet.querySelector(".odd").innerText;
 
-      console.log(title);
-      console.log(odd);
+      const betData = {
+        title,
+        odd,
+        id: i,
+      };
+      console.log(betData);
     };
   }
 })();
