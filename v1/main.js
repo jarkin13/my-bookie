@@ -8,14 +8,14 @@
     btn.onclick = () => {
       let isOpened = "true";
 
-      if (btn.getAttribute("data-is-opened") === "true") {
+      if (btn.getAttribute("date-is-open") === "true") {
         isOpened = "false";
         subMenu.classList.remove("opened");
       } else {
         subMenu.classList.add("opened");
       }
 
-      btn.setAttribute("data-is-opened", isOpened);
+      btn.setAttribute("data-is-open", isOpened);
     };
   }
 })();
