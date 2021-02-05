@@ -1,4 +1,5 @@
 (() => {
+  const nav = document.querySelector(".nav-secondary-actions");
   const btnSubMenuLinks = document.querySelectorAll(".btn-link--has-submenu");
   for (let i = 0; i < btnSubMenuLinks.length; i++) {
     const btn = btnSubMenuLinks[i];
@@ -7,8 +8,17 @@
 
     btn.onclick = () => {
       let isOpened = "true";
+      const currentSubMenuOpened = nav.querySelector(".opened");
 
-      if (btn.getAttribute("date-is-open") === "true") {
+      if (currentSubMenuOpened && currentSubMenuOpened !== subMenu) {
+        const openId = currentSubMenuOpened.getAttribute("id");
+        currentSubMenuOpened.classList.remove("opened");
+        nav
+          .querySelector(`[data-open=${openId}]`)
+          .setAttribute("data-is-open", "false");
+      }
+
+      if (btn.getAttribute("data-is-open") === "true") {
         isOpened = "false";
         subMenu.classList.remove("opened");
       } else {
@@ -16,6 +26,20 @@
       }
 
       btn.setAttribute("data-is-open", isOpened);
+    };
+  }
+
+  const bets = document.querySelectorAll(".bet-container");
+  const userBets = [];
+
+  for (let i = 0; i < bets.length; i++) {
+    const bet = bets[i];
+    bet.onclick = () => {
+      const title = bet.querySelector(".title").innerText;
+      const odd = bet.querySelector(".odd").innerText;
+
+      console.log(title);
+      console.log(odd);
     };
   }
 })();

@@ -26,15 +26,14 @@
   --btn-font-weight: var(--font-weight-semi-bold);
   --btn-text-color: var(--white);
   --btn-text-size: 12px;
+  --btn-border-color: var(--orange);
 
   /* links */
   --link-color: var(--white);
   --link-hover-color: var(--orange);
 
   /* flex */
-  --flex-gutter: 1rem;
-  --flex-padding: calc(var(--flex-gutter) / 2);
-  --flex-row-margin: calc(var(--flex-gutter) / 2);
+  --flex-gutter: 1.5rem;
   --flex-width: 100%;
 
   /* nav */
@@ -68,23 +67,27 @@ ul {
 /* flex */
 
 .container {
-  padding-right: var(--flex-gutter);
-  padding-left: var(--flex-gutter);
+  padding-right: calc(var(--flex-gutter) / 2);
+  padding-left: calc(var(--flex-gutter) / 2);
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(var(--flex-row-margin) * -1);
-  margin-right: calc(var(--flex-row-margin) * -1);
+  margin-left: calc(var(--flex-gutter) / -2);
+  margin-right: calc(var(--flex-gutter) / -2);
+}
+
+.row.no-gutters {
+  --flex-gutter: 0;
 }
 
 .row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-left: calc(var(--flex-row-margin) / 2);
-  padding-right: calc(var(--flex-row-margin) / 2);
+  padding-left: calc(var(--flex-gutter) / 2);
+  padding-right: calc(var(--flex-gutter) / 2);
 }
 
 .row--align-center {
@@ -177,6 +180,12 @@ ul {
   margin-left: auto;
 }
 
+/* bet - grid */
+.grid {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+}
+
 /* text styles */
 .text-right {
   text-align: right;
@@ -199,27 +208,43 @@ ul {
   margin-left: auto;
 }
 
+.d-block {
+  display: block;
+}
+
 /* buttons & links */
 .btn {
   background-color: var(--btn-background);
-  border: none;
+  border: 2px solid var(--btn-border-color);
+  border-radius: 4px;
   color: var(--btn-text-color);
   cursor: pointer;
   font-family: var(--main-font-family);
   font-size: var(--btn-text-size);
   font-weight: var(--btn-font-weight);
   outline: none;
+  text-decoration: none;
 }
 
 .btn-link {
   --btn-text-size: 12px;
   --btn-background: transparent;
+  --btn-border-color: transparent;
 }
 
-.btn--orange {
-  border-radius: 8px;
+.btn--md {
   padding: 7px 29px;
   text-transform: uppercase;
+}
+
+.btn--full {
+  padding: 7px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.btn--outline {
+  --btn-background: transparent;
 }
 
 .btn-link__submenu {
@@ -353,4 +378,9 @@ ul {
 
 .content__main-item + .content__main-item {
   color: var(--orange);
+}
+
+/* bet popup */
+.popup {
+  display: none;
 }
