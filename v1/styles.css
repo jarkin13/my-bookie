@@ -166,6 +166,26 @@ ul {
   grid-template-columns: 0.5fr 0.5fr;
 }
 
+.grid-item {
+  background-color: var(--lt-grey-btn);
+  border-radius: 4px;
+  margin: 8px;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.grid-item p {
+  margin: auto;
+}
+
+.grid-item .title {
+  text-transform: uppercase;
+}
+
+.grid-item .odds {
+  color: var(--orange);
+}
+
 /* text styles */
 .text-right {
   text-align: right;
@@ -190,6 +210,14 @@ ul {
 
 .d-block {
   display: block;
+}
+
+.border-x {
+  border-left: 2px solid var(--grey100);
+  border-right: 2px solid var(--grey100);
+  height: 32px;
+  display: flex;
+  align-items: center;
 }
 
 /* buttons & links */
@@ -229,6 +257,13 @@ ul {
 
 .btn-link__submenu {
   display: none;
+  background-color: var(--grey200);
+  font-size: 9px;
+  font-family: var(--main-font-family);
+}
+
+.btn-link__submenu li:hover {
+  background-color: var(--grey100);
 }
 
 .btn-link__submenu.opened {
@@ -346,4 +381,63 @@ ul {
 
 .popup {
   display: none;
+}
+
+/* sidebar */
+
+.sidebar1 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey200);
+  border-radius: 8px;
+  margin-top: 16px;
+  margin-left: 15px;
+}
+
+.sidebar2 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey200);
+  border-radius: 8px;
+  margin: 16px 15px;
+  margin-bottom: 0;
+}
+
+.sidebar__title1 {
+  color: var(--orange);
+  font-size: 10.33px;
+  text-transform: uppercase;
+  justify-content: flex-start;
+  padding: 13px 8px;
+}
+
+.sidebar__title2 {
+  color: var(--orange);
+  font-size: 22px;
+  border-bottom: 1.5px solid var(--grey100);
+  padding: 16px 24px;
+  margin: auto;
+}
+
+.featured-bets {
+  align-items: flex-start;
+  padding: 0;
+  font-size: 10.33px;
+}
+
+.featured-bets li {
+  text-transform: uppercase;
+  padding: 13px 8px;
+}
+
+.news__title {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.news__excerpt {
+  font-size: 14px;
+  padding-bottom: 20px;
 }
