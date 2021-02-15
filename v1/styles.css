@@ -78,10 +78,6 @@ ul {
   margin-right: calc(var(--flex-gutter) / -2);
 }
 
-.row.no-gutters {
-  --flex-gutter: 0;
-}
-
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -163,27 +159,31 @@ ul {
   width: 100%;
 }
 
-/* alignment & justify */
-.justify-content-center {
-  justify-content: center;
-}
+/* bet grid */
 
-.align-items-center {
-  align-items: center;
-}
-
-.align-self-end {
-  align-self: flex-end;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-/* bet - grid */
 .grid {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
+}
+
+.grid-item {
+  background-color: var(--lt-grey-btn);
+  border-radius: 4px;
+  margin: 8px;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.grid-item p {
+  margin: auto;
+}
+
+.grid-item .title {
+  text-transform: uppercase;
+}
+
+.grid-item .odds {
+  color: var(--orange);
 }
 
 /* text styles */
@@ -212,13 +212,21 @@ ul {
   display: block;
 }
 
+.border-x {
+  border-left: 2px solid var(--grey100);
+  border-right: 2px solid var(--grey100);
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
 /* buttons & links */
 .btn {
   background-color: var(--btn-background);
   border: 2px solid var(--btn-border-color);
-  border-radius: 4px;
   color: var(--btn-text-color);
   cursor: pointer;
+  border-radius: 4px;
   font-family: var(--main-font-family);
   font-size: var(--btn-text-size);
   font-weight: var(--btn-font-weight);
@@ -238,9 +246,9 @@ ul {
 }
 
 .btn--full {
-  padding: 7px 0;
-  text-align: center;
   width: 100%;
+  text-align: center;
+  padding: 7px 0;
 }
 
 .btn--outline {
@@ -249,6 +257,13 @@ ul {
 
 .btn-link__submenu {
   display: none;
+  background-color: var(--grey200);
+  font-size: 9px;
+  font-family: var(--main-font-family);
+}
+
+.btn-link__submenu li:hover {
+  background-color: var(--grey100);
 }
 
 .btn-link__submenu.opened {
@@ -362,22 +377,69 @@ ul {
   align-self: center;
 }
 
-/* content */
+/* bet popup */
 
-.content__main-button {
-  background-color: var(--grey100);
+.popup {
+  display: none;
+}
+
+/* sidebar */
+
+.sidebar1 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey200);
   border-radius: 8px;
-  outline: none;
-  border: none;
+  margin-top: 16px;
+  margin-left: 15px;
 }
 
-.content__main-items {
-  color: var(--white);
-  text-transform: uppercase;
+.sidebar2 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey200);
+  border-radius: 8px;
+  margin: 16px 15px;
+  margin-bottom: 0;
 }
 
-.content__main-item + .content__main-item {
+.sidebar__title1 {
   color: var(--orange);
+  font-size: 10.33px;
+  text-transform: uppercase;
+  justify-content: flex-start;
+  padding: 13px 8px;
+}
+
+.sidebar__title2 {
+  color: var(--orange);
+  font-size: 22px;
+  border-bottom: 1.5px solid var(--grey100);
+  padding: 16px 24px;
+  margin: auto;
+}
+
+.featured-bets {
+  align-items: flex-start;
+  padding: 0;
+  font-size: 10.33px;
+}
+
+.featured-bets li {
+  text-transform: uppercase;
+  padding: 13px 8px;
+}
+
+.news__title {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.news__excerpt {
+  font-size: 14px;
+  padding-bottom: 20px;
 }
 
 /* bet popup */

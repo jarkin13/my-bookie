@@ -1,8 +1,8 @@
 (() => {
   const nav = document.querySelector(".nav-secondary-actions");
-  const btnSubMenuLinks = document.querySelectorAll(".btn-link--has-submenu");
-  for (let i = 0; i < btnSubMenuLinks.length; i++) {
-    const btn = btnSubMenuLinks[i];
+  const btnSubMenuLink = document.querySelectorAll(".btn-link--has-submenu");
+  for (let i = 0; i < btnSubMenuLink.length; i++) {
+    const btn = btnSubMenuLink[i];
     const subMenuId = btn.getAttribute("data-open");
     const subMenu = document.querySelector(`#${subMenuId}`);
 
@@ -36,7 +36,7 @@
     const bet = bets[i];
     bet.onclick = () => {
       const title = bet.querySelector(".title").innerText;
-      const odd = bet.querySelector(".odd").innerText;
+      const odd = bet.querySelector(".odds").innerText;
 
       const betData = {
         title,
