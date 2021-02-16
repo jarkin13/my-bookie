@@ -28,22 +28,4 @@
       btn.setAttribute("data-is-open", isOpened);
     };
   }
-
-  const bets = document.querySelectorAll(".bet-container");
-  const userBets = [];
-
-  for (let i = 0; i < bets.length; i++) {
-    const bet = bets[i];
-    bet.onclick = () => {
-      const title = bet.querySelector(".title").innerText;
-      const odd = bet.querySelector(".odds").innerText;
-
-      const betData = {
-        title,
-        odd,
-        id: i,
-      };
-      console.log(betData);
-    };
-  }
 })();

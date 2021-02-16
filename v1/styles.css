@@ -380,7 +380,7 @@ ul {
 /* bet popup */
 
 .popup {
-  display: none;
+  /* display: none; */
 }
 
 /* sidebar */
@@ -440,9 +440,4 @@ ul {
 .news__excerpt {
   font-size: 14px;
   padding-bottom: 20px;
-}
-
-/* bet popup */
-.popup {
-  display: none;
 }
