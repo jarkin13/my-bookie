@@ -186,6 +186,10 @@ ul {
   color: var(--orange);
 }
 
+.grid-item .odds::before {
+  content: "+";
+}
+
 /* text styles */
 .text-right {
   text-align: right;
@@ -385,34 +389,35 @@ ul {
 
 /* sidebar */
 
-.sidebar1 {
+.sidebar {
   display: flex;
   flex-direction: column;
   background-color: var(--grey200);
   border-radius: 8px;
+}
+
+.sidebar1 {
   margin-top: 16px;
   margin-left: 15px;
 }
 
 .sidebar2 {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--grey200);
-  border-radius: 8px;
   margin: 16px 15px;
   margin-bottom: 0;
 }
 
-.sidebar__title1 {
+.sidebar__title {
   color: var(--orange);
+}
+
+.title--small {
   font-size: 10.33px;
   text-transform: uppercase;
   justify-content: flex-start;
   padding: 13px 8px;
 }
 
-.sidebar__title2 {
-  color: var(--orange);
+.title--large {
   font-size: 22px;
   border-bottom: 1.5px solid var(--grey100);
   padding: 16px 24px;

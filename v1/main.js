@@ -28,4 +28,29 @@
       btn.setAttribute("data-is-open", isOpened);
     };
   }
+
+  const allBets = document.querySelectorAll(".bet-container");
+  const userBets = [];
+  for (let i = 0; i < allBets.length; i++) {
+    const bet = allBets[i];
+    bet.onclick = function betSlip() {
+      const title = bet.querySelector(".title");
+      const odds = bet.querySelector(".odds");
+      const id = bet.getAttribute("id");
+      let addBet = true; //need to add
+      for (let j = 0; j < userBets.length; j++) {
+        const userBet = userBets[j];
+        if (id === userBet) {
+          addBet = false;
+        }
+      }
+      if (addBet) {
+        //add bet to userBets
+        userBets.push(id);
+      } else {
+        //remove bet from userBets
+        userBets.splice(userBets.indexOf(id), 1);
+      }
+    };
+  }
 })();
