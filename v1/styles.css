@@ -372,6 +372,30 @@ ul {
   font-weight: var(--main-font-weight);
 }
 
+.content__main-content {
+  background-color: var(--grey200);
+  margin-top: 15px;
+  padding: 16px 0;
+}
+
+.section__content-copy {
+  font-size: 12px;
+}
+
+.section__content-copy p {
+  padding: 0 30px;
+  margin-bottom: 8px;
+}
+
+.section__content-copy h3 {
+  padding: 16px 15px;
+  margin: 0 auto;
+}
+
+.section-header {
+  border-bottom: 1px solid var(--grey100);
+}
+
 .site-main {
   --main-font-weight: var(--font-weight-normal);
 }
