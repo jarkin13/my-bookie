@@ -297,7 +297,7 @@ ul {
 }
 
 .nav-main {
-  border-bottom: 2px solid var(--lt-grey-btn);
+  border-bottom: 2px solid var(--grey100);
 }
 
 .nav-main__navigation {
