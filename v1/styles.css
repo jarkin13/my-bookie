@@ -408,24 +408,24 @@ ul {
 
 .sidebar__title {
   color: var(--orange);
+  margin: 0 auto;
 }
 
 .title-small {
   font-size: 10.33px;
   text-transform: uppercase;
-  justify-content: start;
-  padding: 13px 34px;
+  justify-content: flex-start;
+  padding: 13px 8px;
   background-color: var(--grey200);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  margin: 0 auto;
+  width: 158px;
 }
 
 .title--large {
   font-size: 22px;
   border-bottom: 1.5px solid var(--grey100);
   padding: 16px 24px;
-  margin: 0 auto;
 }
 
 .featured-bets {
