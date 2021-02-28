@@ -416,7 +416,7 @@ ul {
 .sidebar {
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .sidebar1 {
@@ -428,9 +428,10 @@ ul {
   margin: 16px 15px;
   margin-bottom: 0;
   padding: 0;
+  padding-bottom: 16px;
   background-color: var(--grey200);
-  width: 136px;
-  max-height: 880px;
+  width: 12%;
+  height: 20%;
 }
 
 .sidebar__title {
@@ -446,7 +447,7 @@ ul {
   background-color: var(--grey200);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  width: 158px;
+  width: 100%;
 }
 
 .title--large {
