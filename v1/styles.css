@@ -473,11 +473,14 @@ ul {
   font-size: 10.33px;
   background-color: var(--grey200);
   cursor: pointer;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .featured-bets li {
   text-transform: uppercase;
   padding: 13px 8px;
+  font-weight: var(--font-weight-bold);
 }
 
 .news__title {
