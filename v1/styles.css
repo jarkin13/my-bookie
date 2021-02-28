@@ -396,6 +396,17 @@ ul {
   border-bottom: 1px solid var(--grey100);
 }
 
+.section-header__items {
+  font-size: 16px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
+.section-header__item {
+  width: 50%;
+  padding: 0;
+}
+
 .site-main {
   --main-font-weight: var(--font-weight-normal);
 }
