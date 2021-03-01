@@ -419,7 +419,58 @@ ul {
 /* bet popup */
 
 .popup {
+  position: fixed;
+  z-index: 9;
+  bottom: 0;
+  right: 5%;
+  background-color: var(--grey100);
+  padding: 22px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   /* display: none; */
+}
+
+.popup__title {
+  border-bottom: 2px solid var(--white);
+}
+
+.slip {
+  margin: 15px 0;
+  background-color: var(--grey300);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+#emptySlip {
+  display: none;
+}
+
+.slip__actions {
+  text-align: right;
+}
+
+.slip .title {
+  margin: 0;
+}
+
+.tabs__nav {
+  display: flex;
+  padding: 0;
+  margin: 8px 0 16px;
+  border-bottom: 4px solid var(--orange);
+}
+
+.tabs__nav button {
+  background: transparent;
+  border: 0;
+  margin: 0 0 8px;
+  padding: 0;
+  outline: none;
+  color: var(--orange);
+}
+
+.tabs__nav li {
+  padding-right: 16px;
 }
 
 /* sidebar */
