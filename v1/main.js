@@ -74,6 +74,18 @@
         // Of those bet-slips find id and remove it
         betSlips.querySelector(`#${id}`).remove();
       }
+
+      // Setting variables for clear bet slip and all active slips
+      const clear = document.querySelector(".clear");
+      const allSlips = document.querySelectorAll(".slip");
+      // When we click clear function is run
+      clear.onclick = function clearAll() {
+        // Iterates through all active slips and removes them and empties userBets[] so we can re-add slips cleared
+        for (let k = 0; k < allSlips.length; k++) {
+          allSlips[k].remove();
+          userBets.splice(0, allSlips.length);
+        }
+      };
     };
   }
 })();
