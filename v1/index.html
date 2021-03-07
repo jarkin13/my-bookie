@@ -42,14 +42,14 @@
             </div>
             <div class="col col-3 nav-main__actions text-right">
               <button class="btn btn-link">Login</button>
-              <button class="btn btn--orange">Join Now</button>
+              <button class="btn btn--md">Join Now</button>
             </div>
           </div>
         </div>
       </nav>
       <div class="nav nav-secondary-container">
         <div class="container">
-          <div class="row">
+          <div class="row align-items-center">
             <div class="nav-secondary__search col col-2">
               <input
                 type="search"
@@ -57,10 +57,10 @@
                 class="search__input"
               />
             </div>
-            <div class="col col-6 nav-secondary__promos">
+            <div class="col col-auto nav-secondary__promos">
               <nav class="nav-secondary">
                 <div class="container">
-                  <ul class="row">
+                  <ul class="row align-items-center">
                     <li class="col col-auto">
                       <a href="#" class="nav-secondary__link link">Cashier</a>
                     </li>
@@ -79,13 +79,14 @@
                 </div>
               </nav>
             </div>
-            <div class="nav-secondary-actions col col-4">
+            <div class="nav-secondary-actions col-auto ml-auto">
               <div class="container">
-                <ul class="row">
+                <ul class="row align-items-center">
                   <li class="col col-auto">
                     <button
                       class="btn btn-link btn-link--has-submenu"
                       data-open="odds"
+                      data-is-open="false"
                     >
                       <span>Odds Form</span>
                       American(+120)
@@ -101,6 +102,7 @@
                     <button
                       class="btn btn-link btn-link--has-submenu"
                       data-open="timeZone"
+                      data-is-open="false"
                     >
                       <span>Time Zone</span>
                       GMT -5(EST)
@@ -124,10 +126,737 @@
       </div>
     </header>
     <main class="site-main site-section">
-      <nav class="col col-2 content content__sidebar">sidebar</nav>
-      <div class="col col-8 content content__main-content">content</div>
-      <div class="col col-2 content content__sidebar">sidebar</div>
+      <div class="container">
+        <div class="row">
+          <nav class="sidebar sidebar1 col col-2">
+            <h2 class="sidebar__title title-small">Featured Bets</h2>
+            <ul class="featured-bets">
+              <li>College Basketball Odds</li>
+              <li>UFC 258 Odds Las Vegas</li>
+              <li>Boxing Odds London and Vegas</li>
+              <li>Daytona 500 Odds Nascar</li>
+              <li>NBA Odds Basketball</li>
+              <li>Australian Open Odds</li>
+              <li>PGA Odds Pebble Beach Pro-Am</li>
+              <li>NHL Odds Hockey</li>
+              <li>Premier League Odds</li>
+              <li>La Liga Odds</li>
+              <li>Serie A Odds</li>
+            </ul>
+          </nav>
+          <div class="col col-8 content content__main-content">
+            <section class="section">
+              <header class="section-header">
+                <div class="row section-header__items">
+                  <div class="col-auto section-header__item">
+                    04/11 - 5:00 PM
+                  </div>
+                  <div class="col-auto section-header__item">
+                    Us Masters - Odds To Win | Golf Lines - Apr 11
+                  </div>
+                </div>
+              </header>
+              <div class="section__content">
+                <div class="section__content-copy">
+                  <p>Us Masters - Odds To Win | Golf Lines - Apr 11</p>
+                  <p>Wager cut off: 2021 11th April 4:00 PM</p>
+                  <h3>Us Masters - Odds To Win | Golf Lines - Apr 11</h3>
+                </div>
+                <div class="grid">
+                  <div
+                    class="grid-item bet-container"
+                    id="bet1"
+                    data-added="false"
+                  >
+                    <p class="title">Dustin Johnson</p>
+                    <p class="odds">600</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet2"
+                    data-added="false"
+                  >
+                    <p class="title">Rory Mcilroy</p>
+                    <p class="odds">900</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet3"
+                    data-added="false"
+                  >
+                    <p class="title">Bryson Dechambeau</p>
+                    <p class="odds">900</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet4"
+                    data-added="false"
+                  >
+                    <p class="title">John Rahm</p>
+                    <p class="odds">1000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet5"
+                    data-added="false"
+                  >
+                    <p class="title">Justin Thomas</p>
+                    <p class="odds">1000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet6"
+                    data-added="false"
+                  >
+                    <p class="title">Brooks Koepka</p>
+                    <p class="odds">1400</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet7"
+                    data-added="false"
+                  >
+                    <p class="title">Xander Schauffele</p>
+                    <p class="odds">1600</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet8"
+                    data-added="false"
+                  >
+                    <p class="title">Patrick Cantlay</p>
+                    <p class="odds">2500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet9"
+                    data-added="false"
+                  >
+                    <p class="title">Patrick Reed</p>
+                    <p class="odds">2500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet10"
+                    data-added="false"
+                  >
+                    <p class="title">Collin Morikowa</p>
+                    <p class="odds">3000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet11"
+                    data-added="false"
+                  >
+                    <p class="title">Hideki Matsuyama</p>
+                    <p class="odds">3000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet12"
+                    data-added="false"
+                  >
+                    <p class="title">Tony Finau</p>
+                    <p class="odds">3300</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet13"
+                    data-added="false"
+                  >
+                    <p class="title">Bubba Watson</p>
+                    <p class="odds">3300</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet14"
+                    data-added="false"
+                  >
+                    <p class="title">Tyrrell Hatton</p>
+                    <p class="odds">3300</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet15"
+                    data-added="false"
+                  >
+                    <p class="title">Webb Simpson</p>
+                    <p class="odds">3500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet16"
+                    data-added="false"
+                  >
+                    <p class="title">Daniel Berger</p>
+                    <p class="odds">4000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet17"
+                    data-added="false"
+                  >
+                    <p class="title">Jason Day</p>
+                    <p class="odds">4000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet18"
+                    data-added="false"
+                  >
+                    <p class="title">Matthew Wolff</p>
+                    <p class="odds">4000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet19"
+                    data-added="false"
+                  >
+                    <p class="title">Tiger Woods</p>
+                    <p class="odds">4000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet20"
+                    data-added="false"
+                  >
+                    <p class="title">Sung-Jae Im</p>
+                    <p class="odds">4000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet21"
+                    data-added="false"
+                  >
+                    <p class="title">Tommy Fleetwood</p>
+                    <p class="odds">4500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet22"
+                    data-added="false"
+                  >
+                    <p class="title">Adam Scott</p>
+                    <p class="odds">5000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet23"
+                    data-added="false"
+                  >
+                    <p class="title">Scottie Scheffler</p>
+                    <p class="odds">5000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet24"
+                    data-added="false"
+                  >
+                    <p class="title">Justin Rose</p>
+                    <p class="odds">5000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet25"
+                    data-added="false"
+                  >
+                    <p class="title">Jordan Spieth</p>
+                    <p class="odds">5000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet26"
+                    data-added="false"
+                  >
+                    <p class="title">Cameron Smith</p>
+                    <p class="odds">5500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet27"
+                    data-added="false"
+                  >
+                    <p class="title">Viktor Hovland</p>
+                    <p class="odds">5500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet28"
+                    data-added="false"
+                  >
+                    <p class="title">Louis Oosthuizen</p>
+                    <p class="odds">5500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet29"
+                    data-added="false"
+                  >
+                    <p class="title">Rickie Fowler</p>
+                    <p class="odds">6000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet30"
+                    data-added="false"
+                  >
+                    <p class="title">Paul Casey</p>
+                    <p class="odds">6600</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet31"
+                    data-added="false"
+                  >
+                    <p class="title">Cameron Champ</p>
+                    <p class="odds">6600</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet32"
+                    data-added="false"
+                  >
+                    <p class="title">Joaquin Niemann</p>
+                    <p class="odds">4500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet33"
+                    data-added="false"
+                  >
+                    <p class="title">Harris English</p>
+                    <p class="odds">3300</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet34"
+                    data-added="false"
+                  >
+                    <p class="title">Matthew Fitzpatrick</p>
+                    <p class="odds">7000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet35"
+                    data-added="false"
+                  >
+                    <p class="title">Shane Lowry</p>
+                    <p class="odds">8000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet36"
+                    data-added="false"
+                  >
+                    <p class="title">Abraham Ancer</p>
+                    <p class="odds">8000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet37"
+                    data-added="false"
+                  >
+                    <p class="title">Phil Mickelson</p>
+                    <p class="odds">8000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet38"
+                    data-added="false"
+                  >
+                    <p class="title">Marc Leishman</p>
+                    <p class="odds">8000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet39"
+                    data-added="false"
+                  >
+                    <p class="title">Jason Kokrak</p>
+                    <p class="odds">8000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet40"
+                    data-added="false"
+                  >
+                    <p class="title">Russell Henley</p>
+                    <p class="odds">8000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet41"
+                    data-added="false"
+                  >
+                    <p class="title">Francesco Molinari</p>
+                    <p class="odds">10000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet42"
+                    data-added="false"
+                  >
+                    <p class="title">Robert Mcintyre</p>
+                    <p class="odds">10000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet43"
+                    data-added="false"
+                  >
+                    <p class="title">Lee Westwood</p>
+                    <p class="odds">10000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet44"
+                    data-added="false"
+                  >
+                    <p class="title">Ian Poulter</p>
+                    <p class="odds">10000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet45"
+                    data-added="false"
+                  >
+                    <p class="title">Si Woo Kim</p>
+                    <p class="odds">12500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet46"
+                    data-added="false"
+                  >
+                    <p class="title">Corey Conners</p>
+                    <p class="odds">12500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet47"
+                    data-added="false"
+                  >
+                    <p class="title">Kevin Kisner</p>
+                    <p class="odds">12500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet48"
+                    data-added="false"
+                  >
+                    <p class="title">Dylan Frittelli</p>
+                    <p class="odds">12500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet49"
+                    data-added="false"
+                  >
+                    <p class="title">Gary Woodland</p>
+                    <p class="odds">12500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet50"
+                    data-added="false"
+                  >
+                    <p class="title">Sebastian Munoz</p>
+                    <p class="odds">12500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet51"
+                    data-added="false"
+                  >
+                    <p class="title">Matt Kuchar</p>
+                    <p class="odds">12500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet52"
+                    data-added="false"
+                  >
+                    <p class="title">Matt Wallace</p>
+                    <p class="odds">14000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet53"
+                    data-added="false"
+                  >
+                    <p class="title">Danny Willett</p>
+                    <p class="odds">15000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet54"
+                    data-added="false"
+                  >
+                    <p class="title">Henrik Stenson</p>
+                    <p class="odds">15000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet55"
+                    data-added="false"
+                  >
+                    <p class="title">Zach Johnson</p>
+                    <p class="odds">15000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet56"
+                    data-added="false"
+                  >
+                    <p class="title">Billy Horschel</p>
+                    <p class="odds">15000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet57"
+                    data-added="false"
+                  >
+                    <p class="title">Kevin Na</p>
+                    <p class="odds">17500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet58"
+                    data-added="false"
+                  >
+                    <p class="title">Erik Van Rooyen</p>
+                    <p class="odds">17500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet59"
+                    data-added="false"
+                  >
+                    <p class="title">Bernd Weisberger</p>
+                    <p class="odds">20000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet60"
+                    data-added="false"
+                  >
+                    <p class="title">Brendon Todd</p>
+                    <p class="odds">20000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet61"
+                    data-added="false"
+                  >
+                    <p class="title">Brandt Snedeker</p>
+                    <p class="odds">20000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet62"
+                    data-added="false"
+                  >
+                    <p class="title">Byeong-Hun An</p>
+                    <p class="odds">20000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet63"
+                    data-added="false"
+                  >
+                    <p class="title">Lanto Griffin</p>
+                    <p class="odds">20000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet64"
+                    data-added="false"
+                  >
+                    <p class="title">Charles Schwartzel</p>
+                    <p class="odds">25000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet65"
+                    data-added="false"
+                  >
+                    <p class="title">Charles Howell</p>
+                    <p class="odds">25000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet66"
+                    data-added="false"
+                  >
+                    <p class="title">Adam Hadwin</p>
+                    <p class="odds">25000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet67"
+                    data-added="false"
+                  >
+                    <p class="title">Christiaan Bezuidenhout</p>
+                    <p class="odds">12500</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet68"
+                    data-added="false"
+                  >
+                    <p class="title">Rafael Cabrera Bello</p>
+                    <p class="odds">25000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet69"
+                    data-added="false"
+                  >
+                    <p class="title">Cheng-Tsung Pan</p>
+                    <p class="odds">25000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet70"
+                    data-added="false"
+                  >
+                    <p class="title">Victor Perez</p>
+                    <p class="odds">25000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet71"
+                    data-added="false"
+                  >
+                    <p class="title">Graeme Mcdowell</p>
+                    <p class="odds">25000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet72"
+                    data-added="false"
+                  >
+                    <p class="title">Bernhard Langer</p>
+                    <p class="odds">75000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet73"
+                    data-added="false"
+                  >
+                    <p class="title">Fred Couples</p>
+                    <p class="odds">75000</p>
+                  </div>
+                  <div
+                    class="grid-item bet-container"
+                    id="bet74"
+                    data-added="false"
+                  >
+                    <p class="title">Mike Weir</p>
+                    <p class="odds">150000</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="popup">
+              <header>
+                <div class="popup__title">Bet Slip</div>
+                <div class="tabs">
+                  <ul class="tabs__nav">
+                    <li>
+                      <button data-open="straight" data-is-open="true">
+                        Straight
+                      </button>
+                    </li>
+                    <li>
+                      <button data-open="straight" data-is-open="false">
+                        If Bet
+                      </button>
+                    </li>
+                    <li>
+                      <button data-open="straight" data-is-open="false">
+                        Reverse
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tabs__content container">
+                    <div id="straight">
+                      <div class="row">
+                        <div class="col-auto">
+                          <button class="clear">Clear Bet Slip</button>
+                        </div>
+                        <div class="col-auto ml-auto">
+                          <span class="text">Set amount all bets</span>
+                          <input
+                            type="text"
+                            class="bet-amount"
+                            placeholder="Bet $"
+                          />
+                        </div>
+                      </div>
+                      <div class="bet-slips">
+                        <div id="emptySlip" class="slip" data-bet="">
+                          <div class="row">
+                            <div class="slip__remove col-auto">
+                              <button class="remove-btn">X</button>
+                            </div>
+                            <div class="slip__info col-auto">
+                              <p class="title"></p>
+                              <p class="type"></p>
+                            </div>
+                            <div class="slip__total col-auto"></div>
+                          </div>
+                          <div class="slip__actions">
+                            Win: <span class="amount">0</span>
+                            <input type="change-amount" placeholder="Bet $" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bet-summary">
+                        <div class="row">
+                          <div class="col-auto">Total Bets</div>
+                          <div class="total-bets col-auto">0</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-auto">Total Bets</div>
+                          <div class="total-bet-amount col-auto">$0.00</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-auto">Total Bets</div>
+                          <div class="potential-win-amount col-auto">$0.00</div>
+                        </div>
+                        <button id="place-bet" class="btn">Place Bet</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </header>
+            </div>
+          </div>
+          <div class="sidebar sidebar2 col col-2">
+            <h1 class="sidebar__title title--large">GOLF News</h1>
+            <a href="#" class="news__title"
+              >2021 Phoenix Open Expert Analysis - PGA Betting</a
+            >
+            <p class="news__excerpt">
+              Okay MyBookie golf betting enthusiasts, with the 2020-21 PGA Tour
+              season rolling right along, it's time to find out which players
+              are looking good against their respective odds to win the 2021
+              Waste Management Phoenix Open. Let's jump right into action so you
+              can make your bets against their Golf odds.
+            </p>
+            <a
+              href="#"
+              class="news__read-more btn d-block btn--full btn--outline"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
     </main>
-    <footer class="site-section">Footer will go here</footer>
+    <footer class="site-section">
+      <div class="container">Footer will go here</div>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>
