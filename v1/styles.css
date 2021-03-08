@@ -222,6 +222,7 @@ ul {
   height: 32px;
   display: flex;
   align-items: center;
+  margin-left: 8px;
 }
 
 /* buttons & links */
@@ -270,10 +271,14 @@ ul {
   background-color: var(--grey100);
 }
 
+.relative-container {
+  position: relative;
+}
+
 .btn-link__submenu.opened {
   display: block;
   position: absolute;
-  top: 19%;
+  top: 2.5rem;
   padding: 0;
   width: 120px;
 }
@@ -284,6 +289,8 @@ ul {
 
 .fas {
   color: var(--white);
+  position: absolute;
+  bottom: 0;
 }
 
 .link {
