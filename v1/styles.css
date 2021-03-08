@@ -419,6 +419,12 @@ ul {
   padding: 0;
 }
 
+.section-header__item-right {
+  text-align: right;
+  padding-right: 16px;
+  color: var(--grey100);
+}
+
 .site-main {
   --main-font-weight: var(--font-weight-normal);
 }
