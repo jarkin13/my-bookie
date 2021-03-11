@@ -76,6 +76,7 @@ ul {
   flex-wrap: wrap;
   margin-left: calc(var(--flex-gutter) / -2);
   margin-right: calc(var(--flex-gutter) / -2);
+  position: relative;
 }
 
 .row > * {
@@ -265,14 +266,11 @@ ul {
   background-color: var(--grey200);
   font-size: 9px;
   font-family: var(--main-font-family);
+  z-index: 2;
 }
 
 .btn-link__submenu li:hover {
   background-color: var(--grey100);
-}
-
-.relative-container {
-  position: relative;
 }
 
 .btn-link__submenu.opened {
