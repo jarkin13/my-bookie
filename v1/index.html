@@ -9,7 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="images/mybookie-tablogo.jpg" />
+    <link rel="shortcut icon" href="assets/images/mybookie-tablogo.jpg" />
+    <link rel="stylesheet" href="assets/font-awesome/all.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -19,7 +20,10 @@
           <div class="row">
             <div class="col col-2 nav-main__logo">
               <a href="index.html">
-                <img src="images/mybookie-logo.png" alt="My Bookie Logo" />
+                <img
+                  src="assets/images/mybookie-logo.png"
+                  alt="My Bookie Logo"
+                />
               </a>
             </div>
             <div class="col col-7 nav-main__navigation">
@@ -81,17 +85,18 @@
             </div>
             <div class="nav-secondary-actions col-auto ml-auto">
               <div class="container">
-                <ul class="row align-items-center">
+                <ul class="nav-actions">
                   <li class="col col-auto">
                     <button
                       class="btn btn-link btn-link--has-submenu"
                       data-open="odds"
                       data-is-open="false"
                     >
-                      <span>Odds Form</span>
+                      <span>Odds Format</span>
                       American(+120)
                       <span class="arrow-down"></span>
                     </button>
+                    <i class="fas fa-caret-down fa-icon"></i>
                     <ul id="odds" class="btn-link__submenu">
                       <li>American(+120)</li>
                       <li>Fractional(6/5)</li>
@@ -108,6 +113,7 @@
                       GMT -5(EST)
                       <span class="arrow-down"></span>
                     </button>
+                    <i class="fas fa-caret-down fa-icon"></i>
                     <ul id="timeZone" class="btn-link__submenu">
                       <li>Eastern Time</li>
                       <li>Central Time</li>
