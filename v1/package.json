@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/jarkin13/my-bookie/issues"
   },
-  "homepage": "https://github.com/jarkin13/my-bookie#readme"
+  "homepage": "https://github.com/jarkin13/my-bookie#readme",
+  "dependencies": {
+    "postcss": "^8.2.8",
+    "postcss-import": "^14.0.0",
+    "rollup": "^2.41.2",
+    "rollup-plugin-postcss": "^4.0.0"
+  }
 }
