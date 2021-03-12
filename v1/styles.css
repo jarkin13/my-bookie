@@ -76,7 +76,6 @@ ul {
   flex-wrap: wrap;
   margin-left: calc(var(--flex-gutter) / -2);
   margin-right: calc(var(--flex-gutter) / -2);
-  position: relative;
 }
 
 .row > * {
@@ -223,7 +222,7 @@ ul {
   height: 32px;
   display: flex;
   align-items: center;
-  margin-left: 8px;
+  margin-left: 16px;
 }
 
 /* buttons & links */
@@ -244,6 +243,7 @@ ul {
   --btn-text-size: 12px;
   --btn-background: transparent;
   --btn-border-color: transparent;
+  margin-left: 8px;
 }
 
 .btn--md {
@@ -289,6 +289,7 @@ ul {
   color: var(--white);
   position: absolute;
   bottom: 0;
+  margin: 1px;
 }
 
 .link {
@@ -381,6 +382,13 @@ ul {
 
 .nav-secondary-actions .nav-secondary__link {
   font-size: 0.6875rem;
+  margin: 8px;
+}
+
+.nav-styling {
+  position: relative;
+  display: inline-flex;
+  /* justify-content: space-around; */
 }
 
 /* main */
