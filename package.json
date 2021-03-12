@@ -1,0 +1,19 @@
+{
+  "name": "my-bookie",
+  "version": "1.0.0",
+  "description": "Mybookie website practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarkin13/my-bookie.git"
+  },
+  "author": "Sam Arkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jarkin13/my-bookie/issues"
+  },
+  "homepage": "https://github.com/jarkin13/my-bookie#readme"
+}
