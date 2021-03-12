@@ -432,7 +432,7 @@ ul {
   padding: 0;
 }
 
-.section-header__item--right {
+.section-header__item + div {
   text-align: right;
   padding-right: 16px;
   color: var(--grey100);
