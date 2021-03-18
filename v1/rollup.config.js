@@ -8,6 +8,7 @@ export default {
     format: "cjs",
     plugins: [
       postcss({
+        include: "src/styles.css",
         plugins: [postcssImport()],
         extract: true,
       }),
