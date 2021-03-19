@@ -6,12 +6,13 @@ export default {
   output: {
     file: "dist/bundle.js",
     format: "cjs",
-    plugins: [
-      postcss({
-        include: "src/styles.css",
-        plugins: [postcssImport()],
-        extract: true,
-      }),
-    ],
   },
+  plugins: [
+    postcss({
+      include: "src/styles.css",
+      plugins: [postcssImport()],
+      extract: true,
+      minimize: true,
+    }),
+  ],
 };
