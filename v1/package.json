@@ -19,13 +19,13 @@
   "homepage": "https://github.com/jarkin13/my-bookie#readme",
   "dependencies": {
     "browser-sync": "^2.26.14",
-    "build-plugin-component": "^1.5.0",
     "chokidar": "^3.5.1",
     "postcss": "^8.2.8",
     "postcss-import": "^14.0.0",
     "rollup": "^2.41.2",
     "rollup-plugin-postcss": "^4.0.0",
-    "rollup-plugin-watch-transform": "^1.0.1"
+    "rollup-plugin-watch-transform": "^1.0.1",
+    "webpack-build": "^1.0.1"
   },
   "devDependencies": {
     "postcss-nesting": "^7.0.1",
