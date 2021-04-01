@@ -315,7 +315,7 @@ ul {
 }
 
 .nav-main {
-  background-color: --var(--grey200);
+  background-color: var(--grey200);
   border-bottom: 2px solid var(--grey100);
   z-index: 9;
   position: fixed;
@@ -405,6 +405,7 @@ ul {
   background-color: var(--grey200);
   margin-top: 15px;
   padding: 16px 0;
+  border-bottom: 1px solid var(--white);
 }
 
 .section__content-copy {
@@ -587,4 +588,12 @@ ul {
   padding: 6px 12px;
   width: 100px;
   align-self: center;
+}
+
+footer {
+  transform: uppercase;
+  color: var(white);
+  font-weight: var(--font-weight-bold);
+  padding: 30px 0;
+  text-align: center;
 }
