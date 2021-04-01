@@ -315,7 +315,11 @@ ul {
 }
 
 .nav-main {
+  background-color: --var(--grey200);
   border-bottom: 2px solid var(--grey100);
+  z-index: 9;
+  position: fixed;
+  top: -10%;
 }
 
 .nav-main__navigation {
