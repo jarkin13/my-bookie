@@ -1,3 +1,5 @@
+import "./styles.css";
+
 (() => {
   const nav = document.querySelector(".nav-secondary-actions");
   const btnSubMenuLink = document.querySelectorAll(".btn-link--has-submenu");
