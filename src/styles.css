@@ -307,6 +307,7 @@ ul {
 /* header */
 .site-header {
   background-color: var(--grey200);
+  margin-top: 66px;
 }
 
 /* nav */
@@ -319,7 +320,9 @@ ul {
   border-bottom: 2px solid var(--grey100);
   z-index: 9;
   position: fixed;
-  top: -10%;
+  top: 0;
+  width: 100%;
+  height: 66px;
 }
 
 .nav-main__navigation {
